@@ -102,20 +102,45 @@ body{
 
     }
     #section1{
-        .matthew-image{
-            background-image: url('../images/matthew.jpg');
-            height: 700px;
-            width: 1000px;
-            background-size: cover;
-            overflow: hidden;
-            margin-left: 10em;
+        .everything-holder{
+            margin: 0 auto;
+            width: 90%;
+            .matthew-image{
+                background-image: url('../images/matthew.jpg');
+                height: 700px;
+                width: 1000px;
+                background-size: cover;
+                position: relative;
+            }
+            .title{
+                font-size: 7em;
+                position: absolute;
+                bottom: -1.32em;
+                color: #323141;
+            }
+            .mid{
+                bottom: -1.7em;
+                color: #5D72A7;
+            }
+            .bot{
+                bottom: -2.1em;
+                color: black;
+            }
+            .image-holder{
+                display: inline-block;
+                margin-left: 10em;
+            }
+            .bio-holder{
+                display: inline-block;
+                vertical-align: top;
+                font-size: 1.3em;
+                width: 27em;
+                margin-left: 3em;
+            }
         }
-        .title{
-            font-size: 7em;
-            position: absolute;
-            bottom: 1.1em;
-            
-        }
+    }
+    #section2{
+        background-color: blue;
     }
 }
 // responsiveness nowhere near complete
