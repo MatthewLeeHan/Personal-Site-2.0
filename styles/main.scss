@@ -28,6 +28,7 @@ body{
             font-size: 10em;
             margin: 0;
             padding: 0;
+            text-align: center;
         }
         p{
             font-size: 2em;
@@ -38,12 +39,17 @@ body{
             position: relative;
             z-index: 10;
             height: 100%;
+            width: 99.5vw; //just a hack for now...
             .top{
                 color: rgba(255, 197, 96, 0.7);
                 position: absolute;
                 top: 50%;
                 left: 50%;
                 transform: translate(-50%, -50%);
+                padding: 0;
+                margin: 0;
+                height: 230px;
+                width: 100vw;
             }
             .middle{
                 color: rgba(102, 255, 216,0.5);
@@ -51,6 +57,10 @@ body{
                 top: 51%;
                 left: 50%;
                 transform: translate(-50%, -50%);
+                padding: 0;
+                margin: 0;
+                height: 230px;
+                width: 100vw;
             }
             .bottom{
                 color: rgba(102, 255, 216,0.5);
@@ -58,16 +68,60 @@ body{
                 top: 52%;
                 left: 50%;
                 transform: translate(-50%, -50%);
+                padding: 0;
+                margin: 0;
+                height: 230px;
+                width: 100vw;
             }
             .subtitle{
                 color: rgba(102, 255, 216,0.9);
                 font-weight: 700;
                 position: absolute;
-                top: 59%;
+                top: 60%;
                 left: 50%;
                 transform: translate(-50%, -50%);
             }
+            @keyframes pulse{
+                0%{opacity: 0;}
+                50%{opacity: 1;}
+                100%{opacity: 0;}
+            }
+            .scrolldown{
+                position: absolute;
+                color: white;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                bottom: 0%;
+                font-size: 1em;
+                animation-name: pulse;
+                animation-iteration-count: infinite;
+                animation-duration: 2s;
+                animation-timing-function: ease;
+            }
         }
 
+    }
+}
+// responsiveness nowhere near complete
+@media (max-width: 1200px) { 
+    body{
+        #section0{
+            .cosmo{
+                h1{
+                    font-size: 9em;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 900px) { 
+    body{
+        #section0{
+            .cosmo{
+                h1{
+                    font-size: 7em;
+                }
+            }
+        }
     }
 }
