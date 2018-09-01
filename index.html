@@ -7,12 +7,21 @@
     <title>Matthew Han</title>
     <link href="./styles/main.min.css" rel="stylesheet">
     <link href="./styles/fullpage.css" type="text/css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
 </head>
 <body>
     <div class="wrapper">
         <div id="fullpage">
             <div class="section" id="section0">
-                <h1>Matthew Han</h1>
+                <video data-autoplay muted loop id="myVideo">
+                    <source src="./videos/splash.mp4" type="video/mp4">
+                </video>
+                <div class="cosmo">
+                        <h1 class="top">Matthew Han</h1>
+                        <h1 class="middle">Matthew Han</h1>
+                        <h1 class="bottom">Matthew Han</h1>
+                        <p class="subtitle">developer & videographer</p>
+                </div>
             </div>
             <div class="section">Some section2</div>
             <div class="section">Some section3</div>
@@ -26,7 +35,7 @@
         new fullpage('#fullpage', {
             //options here
             autoScrolling:true,
-            scrollHorizontally: true
+            licenseKey:"OPEN-SOURCE-GPLV3-LICENSE",
         });
     </script>
 </body>
