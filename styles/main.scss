@@ -101,6 +101,22 @@ body{
         }
 
     }
+    #section1{
+        .matthew-image{
+            background-image: url('../images/matthew.jpg');
+            height: 700px;
+            width: 1000px;
+            background-size: cover;
+            overflow: hidden;
+            margin-left: 10em;
+        }
+        .title{
+            font-size: 7em;
+            position: absolute;
+            bottom: 1.1em;
+            
+        }
+    }
 }
 // responsiveness nowhere near complete
 @media (max-width: 1200px) { 
